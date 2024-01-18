@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shoping website</title>
+    <link rel="stylesheet" href="shopweb.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="backscreen"></div>
+    <header class="web-header">
+      <a href="#" class="logo">Adnan Shop</a>
+      <i class="fa-solid fa-bars" id="menu-icon" onclick=""></i>
+      <ul class="navbar">
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icons">
+        <a class="fa-solid fa-bag-shopping"></a>
+        <span class="cart-items">0</span>
+      </div>
+    </header>
+    <main class="shop" id="shop">
+      <h2 class="shop-products-header">Products</h2>
+      <div class="shop-products-container"></div>
+    </main>
+    <section class="about" id="about">
+      <hr class="horizontal-line" />
+      <div class="about-content">
+        <h2>about</h2>
+        <p>
+          For comfortable online shopping, Adnan store has provided you with the
+          first specialized fashion site and the most diverse online shopping
+          site for clothing, accessories and accessories, quality goods with
+          price guarantee and the possibility of returning goods. The goal of
+          our site is to improve the customer experience in shopping and we will
+          increase the variety of products according to your needs and the
+          latest market models.
+        </p>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="main-contact">
+        <div class="main-contact-lists">
+          <div class="contact-content">
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+          <div class="contact-content">
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Store Policy</a></li>
+            <li><a href="#">Payment Methods</a></li>
+          </div>
+          <div class="contact-content">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Tel: +98 918 790 7412</a></li>
+          </div>
+          <div class="contact-content">
+            <li>
+              <a href="#">Facebook <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#">Instagram <i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#">Pinterest <i class="fa-brands fa-pinterest"></i></a>
+            </li>
+          </div>
+        </div>
+        <div class="action">
+          <form>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <input type="submit" name="submit" value="submit" required />
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="cart-center">
+      <div class="backdrop"></div>
+      <div class="cart">
+        <div class="cart-title">Your Cart</div>
+        <div class="cart-content">
+          <!-- <div class="cart-item">
+            <img
+              class="cart-item-image"
+              src="./assets/pictures/autumn/20230921_160438.jpg"
+              alt=""
+            />
+            <div class="cart-item-desc">
+              <h4>cart title</h4>
+              <h5>12.99 $</h5>
+            </div>
+            <div class="cart-item-controller">
+              <i class="fas fa-chevron-up"></i>
+              <p>1</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <i class="fas fa-trash"></i>
+          </div> -->
+        </div>
+        <div class="cart-footer">
+          <span class="cart-total"></span>
+          <button class="btn clear-cart">Clear Cart</button>
+          <button class="btn cart-item-confirm">Confirm</button>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="shopweb.js"></script>
+  </body>
+</html>
